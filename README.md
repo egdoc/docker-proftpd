@@ -18,7 +18,7 @@ docker run \
   --publish 20-21:20-21/tcp \
   --publish 40000-40009:40000-40009/tcp \
   --volume /data:/home/user \
-  egdoc/docker-proftpd
+  egdoc/proftpd
 ```
 
 ### ... via `docker compose`
@@ -26,7 +26,7 @@ docker run \
 ```yml
 services:
   ftp-server:
-    image: egdoc/docker-proftpd
+    image: egdoc/proftpd
     environment:
       - FTP_PASS=123
       - FTP_USER=user
