@@ -12,13 +12,13 @@ following:
 
 ```sh
 docker run \
-	--detach \
-	--env FTP_USER=user \
-	--env FTP_PASS=123 \
-	--publish 20-21:20-21/tcp \
-	--publish 40000-40009:40000-40009/tcp \
-	--volume /data:/home/user \
-	egdoc/docker-proftpd
+  --detach \
+  --env FTP_USER=user \
+  --env FTP_PASS=123 \
+  --publish 20-21:20-21/tcp \
+  --publish 40000-40009:40000-40009/tcp \
+  --volume /data:/home/user \
+  egdoc/docker-proftpd
 ```
 
 ### ... via `docker compose`
