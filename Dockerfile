@@ -8,7 +8,7 @@ ENV UID=1000
 
 RUN apt-get update && apt-get install -y proftpd
 
-RUN useradd -u "${UID}" "${FTP_USER}"
+RUN useradd -m -u "${UID}" "${FTP_USER}"
 
 COPY proftpd.conf /etc/proftpd
 COPY entrypoint.sh /
