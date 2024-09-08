@@ -6,7 +6,7 @@ ENV FTP_USER=user
 ENV FTP_PASS=pass
 ENV UID=1000
 
-RUN apt-get update && apt-get install -y proftpd
+RUN apt-get update && apt-get install -y proftpd proftpd-mod-crypto
 
 RUN useradd -m -u "${UID}" "${FTP_USER}"
 
